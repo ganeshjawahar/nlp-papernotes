@@ -27,6 +27,3 @@ TLDR; The authors study two common forms of adaptation, Feature Extraction (FE) 
 This is a well-written paper whose main contribution is the set of guidelines for adapting pretrained models. 
 
 
-
-
-
