@@ -1,6 +1,6 @@
 ## [Linguistic Knowledge and Transferability of Contextual Representations](https://arxiv.org/abs/1903.08855)
 
-TLDR; This paper mainly asks three questions: what features of language do  capture/miss, how and why does transferability vary across different layers of CWR and how does the choice of pretraining affect the vector's linguistic knowledge and transferability. The linear models trained on top of frozen CWR are competitive with task-specific SOTA models in many cases, but fail on tasks requiring fine-grained linguistic knowledge. Higher layers of RNNs are more task-specific, while transformer layers do not exhibit the same monotonic trend. For any task, pretraining on a closely related task yields better performance than language model pretraining (which on more data gives the best results).  
+TLDR; This paper mainly asks three questions: what features of language do contextualized vectors capture/miss, how and why does transferability vary across different layers of CWR and how does the choice of pretraining affect the vector's linguistic knowledge and transferability. The linear models trained on top of frozen CWR are competitive with task-specific SOTA models in many cases, but fail on tasks requiring fine-grained linguistic knowledge. Higher layers of RNNs are more task-specific, while transformer layers do not exhibit the same monotonic trend. For any task, pretraining on a closely related task yields better performance than language model pretraining (which on more data gives the best results).  
 
 #### Key Points
 - CWR are outputs of neural nets trained on tasks with large datasets, such as MT and LM. Their broad success indicates that they encode useful, transferable features of language. Still, their linguistic knowledge and transferability are not understood well.
@@ -14,7 +14,7 @@ TLDR; This paper mainly asks three questions: what features of language do  capt
   - BERT base, cased and large, cased
   - Compared to GloVe
 - Linear Probing Results:
-  - Non-contextual baseline (Glove) vs CWR vs Task-specific Model (TSM, arefully tuned)
+  - Non-contextual baseline (Glove) vs CWR vs Task-specific Model (TSM, carefully tuned)
   - CWR >> Glove 
   - CWR is competitive with TSM
   - GPT < ELMo, BERT => Bidirectionality is crucial.
@@ -46,5 +46,5 @@ TLDR; This paper mainly asks three questions: what features of language do  capt
   - original ELMo is the best => pretrain on large corpora => unsupervised pretraining is vital.
 
 #### Thoughts
-It was interesting to see the linguistic features that CWR lack (e.g., entity info.) thereby proposed suggestions like augmenting CWR with explicit entity representations look very promising. 
+It was interesting to see the linguistic features that CWR lack (e.g., entity info.) thereby proposed suggestions like augmenting CWR with explicit entity representations looks very promising. 
 
