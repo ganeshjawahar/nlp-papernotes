@@ -1,6 +1,6 @@
 ## [Learning to Speak and Act in a Fantasy Text Adventure Game](https://arxiv.org/abs/1903.03094)
 
-TLDR; The authors propose a large-scale text adventure game as a platform to study grounded dialogue. Agents can perceive, emote, act while conducting dialogue with other agents. They show that grounding on the information from the local environment such as description of location, objects and characters allow both generative/retrieval models to predict the agent behavior and dialogue well.
+TLDR; The authors propose a large-scale text adventure game as a platform to study grounded dialogue. Agents can perceive, emote, act while conducting dialogue with other agents. They show that grounding on the information from the local environment such as description of location, objects and characters allows both generative/retrieval models to predict the agent behavior and dialogue well.
 
 #### Key Points
 - Hypothesis: Dialogue agents embodied in a rich and cohesive world can be trained to use language well than those exposed only to large-scale text-only corpora.
@@ -35,7 +35,7 @@ TLDR; The authors propose a large-scale text adventure game as a platform to stu
   - Best Models:
     - IR baseline shows non-random performance
     - Starspace > IR
-    - Transformer architecture strong at all tasks.
+    - Transformer architecture is strong at all tasks.
     - Cross-Ranker > Bi-Ranker
     - Human performance is still above all these models => scope for future improvements.
     - Generative model did not work well.
@@ -47,7 +47,7 @@ TLDR; The authors propose a large-scale text adventure game as a platform to stu
     - Dialogue + Object: Least improvement because of the long description of the object the model is unable to associate that information to dialgoue, action and emote.
     - Action, Emote Task: Performs poorly when we include all the features due to the enlargement of the input.
     - Dialogue + MISC features > Model with no access to dialogue > Action + Emote features
-    - Dialogue + actions improves results almost everywhere.
+    - Dialogue + Actions improves results almost everywhere.
     - Qualitative results on how predicted utterances change when the context changes for the same character and dialogue but in a different location.
 
 #### Thoughts
