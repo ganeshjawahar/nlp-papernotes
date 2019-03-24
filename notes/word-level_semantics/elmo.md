@@ -1,6 +1,6 @@
 ## [Deep contextualized word representations](https://arxiv.org/abs/1802.05365)
 
-TLDR; The authors propose deep contextualized word representation that can capture syntax and semantics of word and usage of a word across linguistic contexts. This representation is obtained from the activations of a biLM trained on a large text corpus. The downstream models can select the information from the different layers pertinent to the target task. The result is that this setup improves the state of the art across several challenging NLP problems like QA, TE and SA.
+TLDR; The authors propose deep contextualized word representation that can capture syntax and semantics of word and usage of a word across linguistic contexts. This representation is obtained from the activations of a biLM trained on a large text corpus. The downstream models can select the information from the different layers relevant to the target task. The result is that this setup improves the state of the art across several challenging NLP problems like QA, TE and SA.
 
 #### Key Points
 - Build high quality representation that can model complex characteristics of word use (e.g., syntax and semantics) and usage of word across linguistic contexts (to model polysemy). It should be integrated easily into existing models like Word2vec.
@@ -30,7 +30,7 @@ TLDR; The authors propose deep contextualized word representation that can captu
   - Probing tasks: Word Sense Disambiguation (WSD) and PoS tagging 
   - Higher-level LSTM states capture context-dependent aspects of word meaning (e.g. features useful for word sense disambiguation tasks).
   - Lower-level LSTM states model aspects of syntax (e.g. features useful for PoS tagging).
-  - Exposing all of the layers is highly beneficial allowing the learned models select the types of semi-supervision that are most useful for each end task.
+  - Exposing all of the layers is highly beneficial, allowing the learned models select the types of semi-supervision that are most useful for each end task.
 - Sample efficiency
   - In terms of number of parameter updates to reach SOTA and training set size.
   - SRL: 10 (with ELMo) vs 486 epochs (without ELMo) to reach maximum dev F1 score.
