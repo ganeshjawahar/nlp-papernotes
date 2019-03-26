@@ -11,12 +11,12 @@ TLDR; This paper builds on token-level probing work and introduces a novel edge 
   - Is this info. local or do encoders also capture long-range structure?
 - Edge probing model
   - Decompose each structured NLP task into a set of graph edges which we can predict independently using a common classifier.
-  - Input: Emnbeddings within given spans (e.g. predicate-argument pair)
-  - Output: properties such as semantic roles, which require whole-sentence context
+  - Input: Embeddings within given spans (e.g. predicate-argument pair).
+  - Output: properties such as semantic roles, which require whole-sentence context.
   - Data: Structured NLP tasks such as tagging, parsing, coreference and semantic roles. (OntoNotes)
   - Models: CoVe, ELMo, GPT, BERT vs. word-level baselines (to separate contribution of context from lexical priors), augmented baselines (to better understand the role of pretraining and ability of encoders to capture long-range dependencies.)
-  - Tasks: POS, constituent/dependency labeling, NE labeling, SRL, coreference, semantic proto-role, relation classification
-  - probing model: Span representations + Concatenation + 2-layer MLP + Sigmoid output
+  - Tasks: POS, constituent/dependency labeling, NE labeling, SRL, coreference, semantic proto-role, relation classification.
+  - Probing model: Span representations + Concatenation + 2-layer MLP + Sigmoid output.
 - Experiments and results
   - Baseline: Word embedding layer from biLM, randomized ELMo (all layers above lexical layer is randomized), Word-level CNN (to factor out local relationships)
   - mix mode: ELMo-style mix of different layers of the model.
@@ -33,16 +33,16 @@ TLDR; This paper builds on token-level probing work and introduces a novel edge 
   - Encoding syntactic vs. semantic info.
     - Large gains on syntactic tasks than semantic tasks.
     - ELMo encodes local type information. (PoS and entities)
-  - Effects of architecutre
+  - Effects of architecture
     - How much peformance can be attributed to architecture rather than knoweldge from pretraining?
     - Compare to orthonormal encoder.
     - Learned weight account for over 70% improvement from full ELMo.
   - Encoding non-local context
     - How much info. is carried over long distances in the sentence?
     - Use CNN of different width 3 and 5.
-    - ELMo's info. about constituent is mostly local (as the gap between CNN and ELMo full is closed by 79% with CNN-5)
-    - ELMo's improvements are due to modeling long-range info. (for semantic tasks, this gap is large)
-    - Vary the performance on dependency labeling with distance between token and its head => full ELMo model holds up better suggesting CWR encode useful long-distance dependencies.
+    - ELMo's info. about constituent is mostly local (as the gap between CNN and ELMo full is closed by 79% with CNN-5).
+    - ELMo's improvements are due to modeling long-range info (for semantic tasks, this gap is large).
+    - Vary the performance on dependency labeling with distance between token and its head => full ELMo model holds up better, suggesting CWR encode useful long-distance dependencies.
 
 
 #### Thoughts

@@ -5,7 +5,7 @@ TLDR; This paper studies how the choice of neural architecture affects the downs
 #### Key Points
 - Problem
   - Despite large gains from CWR, we do not understand why or how pretraining works in practice.
-  - ELMo uses LSTM-based biLMS, yet there is no prior reason to believe this is the best possible architecture. => Can try CNN, Transformer
+  - ELMo uses LSTM-based biLMs, yet there is no prior reason to believe this is the best possible architecture. => Can try CNN, Transformer
 - Architectures for deep biLM
   - Test if architecture choice is important for the quality of CWR.
   - Models: LSTM (2 and 4 layer), Transformer, Gated CNN; Equally skilled biLMs as measured by perplexity.
@@ -19,7 +19,7 @@ TLDR; This paper studies how the choice of neural architecture affects the downs
   - Results
     - LSTM perform the best for all tasks.
     - Transformer, CNN, LSTM are competitive => Regardless of the architecture choice, they learn good quality CWR.
-    - They all outperform GloVe 
+    - They all outperform GloVe. 
 - Intrinsic properties of contextual vectors
   - Contextual Similarity
     - Intra-sentence similarity
@@ -29,8 +29,8 @@ TLDR; This paper studies how the choice of neural architecture affects the downs
       - Upper layer: All the verbs have high similarity (PoS info.) and model learns to perform coreference resolution (associating 'it' to 'government').
     - Span representations
       - Vector: Concatenate first and last context vector using element wise product and difference.
-      - Data: CoNLL 2000 chunkin
-      - Visualize 1st layer of 4-layer LSTM: Span representation capture elements of phrasal syntax.
+      - Data: CoNLL 2000 chunking
+      - Visualize 1st layer of 4-layer LSTM: Span representation captures elements of phrasal syntax.
     - Unsupervised pronomial coref
       - Design a new experiment to perform unsupervised coreference resolution.
       - Transfomer performs the best.
