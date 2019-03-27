@@ -1,4 +1,4 @@
-## [What do you learn from context? Probing for sentence structure in contextualized word representations ](https://openreview.net/forum?id=SJzSgnRcKX)
+## [What do you learn from context? Probing for sentence structure in contextualized word representations](https://openreview.net/forum?id=SJzSgnRcKX)
 
 TLDR; This paper builds on token-level probing work and introduces a novel edge probing task to investigate how CWR encode sentence structure across a range of syntactic, semantic, local and long-range phenomena. CWR trained on LM and MT encode syntactic phenomena strongly, but offer comparably small improvements on semantic tasks over a non-contextual baseline.
 
