@@ -1,6 +1,6 @@
 ## [Learning from Dialogue after Deployment: Feed Yourself, Chatbot!](https://arxiv.org/abs/1901.05415)
 
-TLDR; The authors propose a dialogue agent with the ability to extract new training examples from the conversations during deployment. If the agent finds the conversation to be going well, the user's responses become new training examples to imitate. If the agent believes it has made a mistake, it asks for feedback and learning to predict the feedback that will be given improves the agent's dialgoue abilities further. This agent significantly improves performance regardless of the amount of traditional supervision.
+TLDR; The authors propose a dialogue agent with the ability to extract new training examples from the conversations during deployment. If the agent finds the conversation to be going well, the user's responses become new training examples to imitate. If the agent believes it has made a mistake, it asks for feedback and learning to predict the feedback that will be given improves the agent's dialogue abilities further. This agent significantly improves performance regardless of the amount of traditional supervision.
 
 #### Key Points
 - Challenges
