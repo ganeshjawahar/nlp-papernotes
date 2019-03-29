@@ -29,7 +29,7 @@ TLDR; The authors propose a dialogue agent with the ability to extract new train
   - Feedback
     - X: Same context as previous task
     - Y: Feedback utterance.
-    - Bot question: Oops! Sorry. What should I have said instead? => Future work should explore askingdifferent kinds of questions.
+    - Bot question: Oops! Sorry. What should I have said instead? => Future work should explore asking different kinds of questions.
     - New Example: Conversation till the agent made the poor response and user's response.
     - Reset the bot's history and instruct the user to continue, asking for a new topic.
 - Model and Settings
