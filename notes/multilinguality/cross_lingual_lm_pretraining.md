@@ -1,6 +1,6 @@
 ## [Cross-lingual Language Model Pretraining](https://arxiv.org/abs/1901.07291)
 
-TLDR; This work extends BERT for multiple languages and show the effectiveness of cross-lingual pretraining. They propose supervised and unsupervised methods to learn cross-lingual LM (XLM). They show SOTA results on cross-lingual classification, unsupervised/supervised MT, LM for low-resource languages.
+TLDR; This work extends BERT for multiple languages and show the effectiveness of cross-lingual pretraining. They propose supervised and unsupervised methods to learn cross-lingual LM (XLM). They show SOTA results on cross-lingual classification, unsupervised/supervised MT and LM for low-resource languages.
 
 #### Key Points
 - Existing work: General-purpose sentence representations are monolingual and largely focused around English benchmarks.
@@ -33,7 +33,7 @@ TLDR; This work extends BERT for multiple languages and show the effectiveness o
   - MT model: Denoising Auto-Encoding Loss with online back-translation loss.
   - XLM sets a new SOTA.
   - MLM > CLM
-  - Pretraining encoder is important than decoder.
+  - Pretraining is important for encoder than for decoder.
 - Supervised MT
   - WMT Romanian-English.
   - XLM gives a significant boost. 
@@ -52,5 +52,5 @@ TLDR; This work extends BERT for multiple languages and show the effectiveness o
   - XLM have the particularity of being trained together with a sentence cnoder, while Muse and Concat are based on fastText word emebddings.
 
 #### Thoughts
-It would be interesting to see the impact of Next Sentence Prediction (NSP) objective introduced in BERT for this setting. NSP objective was crucial to BERT's success.
+It would be interesting to see the impact of Next Sentence Prediction (NSP) objective introduced in BERT for this setting. NSP objective was crucial for the success of BERT.
 

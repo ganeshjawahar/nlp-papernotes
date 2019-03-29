@@ -9,4 +9,8 @@
 - Linguistic Knowledge and Transferability of Contextual Representations [[arXiv](https://arxiv.org/abs/1903.08855)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/word-level_semantics/linguistic_knowledge_and_transferability_of_contextual_representations.md)]
 - Language Modeling Teaches You More Syntax than Translation Does: Lessons Learned Through Auxiliary Task Analysis [[arXiv](https://arxiv.org/abs/1809.10040)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/word-level_semantics/lm_teach_more_syntax_than_mt.md)]
 - To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks [[arXiv](https://arxiv.org/abs/1903.05987)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/word-level_semantics/to_tune_or_not_to_tune.md)]
-- What do you learn from context? Probing for sentence structure in contextualized word representations [[OpenReview](https://openreview.net/forum?id=SJzSgnRcKX)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/word-level_semantics/what_do_you_learn_from_context_probing_sentence_structure_in_cwr.md)]
+- What do you learn from context? Probing for sentence structure in contextualized word representations [[OpenReview](https://openreview.net/forum?id=SJzSgnRcKX)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/dialogue_and_interactive_systems/feed_yourself_chatbot.md)]
+- Learning from Dialogue after Deployment: Feed Yourself, Chatbot! [[arXiv](https://arxiv.org/abs/1901.05415)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/word-level_semantics/to_tune_or_not_to_tune.md)]
+- Cross-lingual Language Model Pretraining [[arXiv](https://arxiv.org/abs/1901.07291)] [[notes](https://github.com/ganeshjawahar/phdbook/blob/master/notes/multilinguality/cross_lingual_lm_pretraining.md)]
+
+
